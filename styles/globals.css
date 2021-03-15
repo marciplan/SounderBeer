@@ -1,16 +1,10 @@
-@property --x {
-  syntax: '<percentage>';
-  inherits: false;
-  initial-value: 0%;
-}
 
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: 'Manrope', serif;
-  background: -webkit-radial-gradient(ellipse farthest-corner at var(--x) 0%, #FFFFFF,#D8E9F9 100%);
-  background: radial-gradient(ellipse farthest-corner at var(--x) 0%, #FFFFFF,#D8E9F9 100%);
+  background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
   animation: colorChange 5s infinite alternate;
 }
 
@@ -23,14 +17,3 @@ a {
   box-sizing: border-box;
 }
 
-@keyframes colorChange {
-  0% {
-    --x:0%;
-  }
-  50% {
-    --x:50%;
-  }
-  100% {
-    --x:100%;
-  }
-}

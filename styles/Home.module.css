@@ -31,9 +31,13 @@
 }
 
 .main h1{
-  background: -webkit-linear-gradient(#041628, #0A2D50);
+  background-color: #FFF;
+  background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+  background-size: 100%;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
 }
 
 
