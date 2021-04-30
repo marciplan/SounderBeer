@@ -12,7 +12,12 @@ function createMarkup() {
 
 
 const Sounder = styled.div`
-width: 720px`
+  width: 250px;
+ 
+  @media (min-width: 451px) {
+    width: 720px;
+  }
+`
 
 
 export default function Home() {
