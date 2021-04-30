@@ -7,11 +7,14 @@ import styled from "styled-components"
 
 
 function createMarkup() {
-  return {__html: '<div class="sounder-widget" data-url="https://embed.sounder.fm/play/142610" style="min-width: 720px; height: 100%; margin-bottom: 20px;"></div> <script> (function() { var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = "soun_der", b = "https://embed.sounder.fm"; if (!gi.call(d, id)) { js = ce.call(d, "script"); js.id = id; js.src = b + "/embed.js"; q = gt.call(d, "script")[0]; q.parentNode.insertBefore(js, q);}})(); </script>'};
+  return {__html: '<div class="sounder-widget" data-url="https://embed.sounder.fm/play/142610" style="width:100%; height: 100%; margin-bottom: 20px;"></div> <script> (function() { var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = "soun_der", b = "https://embed.sounder.fm"; if (!gi.call(d, id)) { js = ce.call(d, "script"); js.id = id; js.src = b + "/embed.js"; q = gt.call(d, "script")[0]; q.parentNode.insertBefore(js, q);}})(); </script>'};
 }
 
 
-const Sounder = styled.div``
+const Sounder = styled.div`
+width: 720px`
+
+
 export default function Home() {
   const x = useMotionValue(0)
 const opacity = useTransform(x, [-200, 0, 200], [0, 1, 0])
